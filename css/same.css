@@ -1,0 +1,707 @@
+@font-face{
+    font-family:freesans;
+    src:url("../fonts/freesans/freesans.ttf");
+}
+@font-face{
+    font-family:freesansbold;
+    src:url("../fonts/freesans/freesansbold.ttf")
+}
+@font-face{
+    font-family: JosefinSans-SemiBold;
+    src:url("../fonts/Josefin_Sans/JosefinSans-SemiBold.ttf")
+}
+@font-face{
+    font-family: JosefinSans-Light;
+    src:url("../fonts/Josefin_Sans/JosefinSans-Light.ttf")
+}
+.main{
+    height: 100vh;
+}
+.headerdiv1{
+    background-color:black;
+	padding-left:100px;
+	
+}
+.entered{
+    float:right;
+    padding-right: 20px;
+    position: relative;
+}
+.location{
+    float:left;
+    position: relative;
+    color:#fff;
+    font-family:freesans;
+    font-size:15px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+}
+.city{
+    padding-left: 8px;
+    padding-right: 4px;
+}
+.city:after{
+    content: "/";
+    padding-left: 3px;
+}
+.date{
+    padding-right: 4px;
+}
+.date:after{
+    content: "/";
+    padding-left: 9px;
+}
+.time{
+    padding-right: 4px;
+}
+.time:after{
+    content: "/";
+    padding-left: 6px;
+}
+.search{
+    float:left;
+}
+.search form{
+    width: 578px;
+    padding-top: 5px;
+}
+.search form input{
+    width: 0px;
+    height: 37px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    color:#a4a8ae;
+    font-family:freesans;
+    font-size: 15px;
+    float:right;
+}
+.searchBtn{
+    float:right;
+    right: 0;
+    background-color: black;
+    border: none;
+    outline: none;
+    padding-top: 10px;
+}
+.searchBtn i{
+    color: white;
+    font-size: 15px;
+}
+.searchBtn i:hover {
+    color: #ed9920;
+}
+.message, .snap, .plus{
+    position: relative;
+    float:left;
+    padding: 13px;
+}
+.profPic{
+    float: left;
+    position: relative;
+    padding: 4px 8px;
+}
+.message i, .snap i, .plus i{
+    color: #b3b3b3;
+    font-size: 15px;
+}
+.message span, .snap span{
+    width: 8px;
+    height: 8px;
+    background-color: #ed9920;
+    border-radius: 50%;
+    position: absolute;
+    top:14px;
+    right: 10px;
+}
+.profPic img{
+    width:40px;
+    height: 40px;
+}
+.profPic i{
+    color: #b3b3b3;
+    font-size: 19px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.entSign{
+    float:left;
+    position: relative;
+}
+.enter, .signUp{
+    border:none;
+    outline:none;
+    color:#fff;
+    background: #000;
+    padding-top: 14px;
+    padding-left:7px;
+	font-size:14px;
+	font-family:freesansbold;
+}
+.enter{
+	padding-left:34px;
+}
+.enter::after{
+    content: "/";
+    color: white;
+    padding-left: 6px;
+}
+.enter:hover{
+     color: #ed9920;
+}
+.signUp a{
+    color:#fff;
+    text-decoration: none;
+}
+.signUp:hover a{
+     color: #ed9920;
+    text-decoration: none;
+}
+.signUp:hover{
+     color: #ed9920;
+}
+.signUp{
+    float: left;
+}
+.signUp i{
+    padding-left: 10px;
+}
+.enterField{
+    display: none;
+}
+.enterField h6{
+    color:#000;
+    font-family: freesansbold;
+    font-weight: bolder;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.enterField input{
+    height:35px;
+    max-width:154px;
+    outline: none;
+    color:#a1a1a1;
+    font-family: freesans;
+    font-size:12px;
+    border:1px solid #a1a1a1;
+    padding-left: 20px;
+    margin-left:-4px;
+    margin-bottom: 10px;
+}
+.enterField label{
+    padding: 8px 17px 9px 14px;
+    background-color: #a1a1a1;
+    color:#fff;
+    font-size: 13px;
+}
+button[name="fb"], button[name="gm"]{
+    outline: none;
+    border:none;
+    background: #fff;
+}
+.orange{
+    width:79px;
+    height:3px;
+    background:#ed9920;
+    margin-bottom: 14px;
+}
+.enterField a{
+    text-decoration: none;
+    color:#000;
+    font-family: freesansbold;
+    font-size:15px;
+    font-weight: 800;
+    clear:both;
+}
+.enterField p{
+    padding-top: 6px;
+    padding-bottom: 1px;
+}
+.enterField p a{
+    text-decoration: none;
+}
+input[name="log"]{
+    margin-left: 2px;
+    padding: 0px 16px 0px 13px;
+    background: #ed9920;
+    color:#fff;
+    border: none;
+}
+.enterField a:hover{
+    text-decoration: none;
+    color:#000;
+}
+.enterField a:active{
+    text-decoration: none;
+    color:#000;
+}
+.showEnterField{
+    display:block;
+    position:absolute;
+    background-color: white;
+    width:242px;
+    border:1px solid #a1a1a1;
+    padding:10px 12px 14px;
+    top:50px;
+    left:-65px;
+}
+
+.languages{
+    float: left;
+    padding-top: 15px;
+    padding-left: 57px;
+}
+.languages span{
+    color: white;
+    font-family:freesans;
+    font-size: 14px;
+}
+.arm:after{
+    content: "/";
+    padding-left: 2px;
+    padding-right: 2px;
+    color:white;
+}
+.languages span:hover{
+    color: #ed9920;
+    cursor: pointer;
+}
+.logodiv{
+    padding-top: 96px;
+    padding-bottom: 91px;
+}
+.logo{
+    width:315px;
+    margin: auto;
+}
+.logo img{
+    height:142px;
+}
+nav{
+    border-top:1px solid #9ea5aa;
+    border-bottom:1px solid #9ea5aa;
+    padding-top: 24px;
+    padding-bottom:24px;
+    position: relative;
+}
+nav ul{
+    list-style-type: none;
+    position: relative;
+    margin: auto;
+    max-width: 1140px;
+	padding-top:3px;
+}
+nav ul li{
+    float: left;
+    margin-left: 27px;
+    text-transform: uppercase;
+}
+nav ul li a, nav ul li{
+    text-decoration: none;
+    color:#000 ;
+    font-family: freesansbold;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color:#ed9920;
+    text-decoration: none;
+}
+nav ul li:hover{
+    color:#ed9920;
+    cursor: pointer;
+}
+#prem{
+	border:2px dotted red;
+	border-radius:10px;
+}
+.servBody, .prvBody{
+    position: absolute;
+    left:192px;
+    top:100px;
+    display: none;
+    background-color: white;
+    z-index: 4;
+}
+.servBody ul, .prvBody ul{
+    float:left;
+}
+.servBody ul li, .prvBody ul li{
+    clear: both;
+    border-bottom: 2px solid #ccc;
+    text-align: left;
+    padding: 8px 0px;
+    width: 271px;
+}
+.prvBody ul li{
+    width: 315px;
+}
+.servBody img, .prvBody img{
+    width:147px;
+    height:156px;
+    margin-left:17px;
+    margin-right: 29px;
+}
+.noborder{
+    border-top: none;
+}
+.more{
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 30px;
+    display: none;
+}
+.activeMenu{
+    position: absolute;
+    display: inline-block !important;
+}
+footer{
+    clear: both;
+    padding-top: 96px;
+}
+.footerInfo{
+    background-color: #333333;
+}
+.footerLogo{
+    padding-top: 56px;
+}
+.footerInfo h5{
+    color:#ed9920;
+    font-family: freesansbold;
+    font-size: 16px;
+    margin-top: 16px;
+}
+.footerOrangeLine{
+    width:108px;
+    height:5px;
+    background: #ed9920;
+    margin-top: 12px;
+}
+.aboutUs p{
+    color:#fff;
+    font-family: freesans;
+    font-size: 14px;
+    margin-top: 18px;
+    text-align: justify;
+    width:218px;
+    line-height: 24px;
+}
+
+
+.footerInfo ul li{
+    list-style: none;
+    padding-bottom: 12px;
+}
+.footerInfo ul li a{
+    color:#fff;
+    font-family: freesans;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footerInfo ul{
+    padding: 0;
+    margin-top: 18px;
+}
+
+.conn i{
+    color:#ed9920;
+}
+.conn span{
+    color: #fff;
+    padding-left: 10px;
+    font-family: freesans;
+    font-size: 14px;
+}
+.conn p{
+    margin-top: 25px;
+}
+.gmail{
+    margin-top: 18px !important;
+}
+.icons{
+    padding-top: 14px;
+}
+.icons i{
+    color: #ed9920;
+    font-size: 22px;
+    cursor: pointer;
+    padding-right: 31px;
+}
+.footerInfo{
+    padding-bottom: 58px;
+}
+.copyRight{
+    background: #000;
+    padding: 10px;
+}
+.copyRight i{
+    color:#fff;
+    font-size: 12px;
+}
+.copyRight span{
+    color: #fff;
+    font-family: freesans;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.rights{
+    width: 300px;
+    margin: auto;
+}
+@media all and (min-width:941px){
+    .servBody, .prvBody{
+        left: 46px;
+    }
+}
+@media all and (min-width:1300px){
+    .servBody, .prvBody{
+        left: 100px;
+    }
+}
+@media all and (min-width:1450px){
+    .servBody, .prvBody{
+        left: 240px;
+    }
+}
+@media all and (min-width:1570px){
+    .search form{
+        width: 700px;
+    }
+}
+@media all and (min-width:1840px){
+    .servBody, .prvBody{
+        left: 355px;
+    }
+}
+@media all and (max-width:1340px){
+	.search form{
+        width: 550px;
+    }
+	.headerdiv1{
+		padding-left:50px;
+	}
+}
+@media all and (max-width:1265px){
+	.search form{
+        width: 440px;
+    }
+}
+@media all and (max-width:1158px){
+	.search form{
+        width: 327px;
+    }
+	nav ul li{
+		font-size:16px;
+		margin-left:20px;
+	}
+	
+
+}
+@media all and (max-width: 1094px){
+    .location{
+        font-size: 12px;
+    }
+    .searchBtn i{
+        font-size: 12px;
+    }
+    .message i, .snap i, .plus i{
+        font-size: 12px;
+    }
+    .profPic img {
+        width: 33px;
+        height: 33px;
+    }
+    .languages span{
+        font-size: 12px;
+    }
+}
+@media all and (max-width:1024px){
+	 #conUs{
+        display: none;
+    }
+    .more{
+        display: block;
+        position: absolute;
+        top:-12px;
+    }
+}
+@media all and (max-width: 991px){
+    .city{
+        padding-left: 3px;
+        padding-right: 1px;
+    }
+    .date{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .time{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .aboutUs{
+        float:left;
+    }
+    .serv{
+        float:right;
+    }
+    .prov{
+        clear: both;
+        float:left;
+    }
+    .conn{
+        float: right;
+    }
+	.search form{
+        width: 240px;
+    }
+}
+
+@media all and (max-width: 940px){
+    .servBody, .prvBody{
+        left:0;
+    }
+}
+@media all and (max-width: 926px){
+    nav ul li{
+        margin-left: 18px;
+    }
+}
+@media all and (max-width:887px){
+	.search form{
+        width: 220px;
+    }
+	.enter, .signUp{
+		font-family:freesans;
+	}
+	.headerdiv1{
+		padding-left:20px;
+	}
+	 #news{
+        display: none;
+    }
+
+}
+@media all and (max-width: 830px){
+    .message, .snap, .plus{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+	.location{
+		float:right;
+	}
+	.entered{
+		clear:both;
+		float:right;
+	}
+}
+@media all and (max-width: 750px){
+    .servBody ul li, .prvBody ul li{
+        width:200px;
+    }
+	 #prv{
+        display: none;
+    }
+	nav ul li a{
+		font-size:16px;
+	}
+	nav ul li {
+    margin-left: 26px;
+}
+}
+@media all and (max-width: 680px){
+    .servBody img, .prvBody img{
+        width:98px;
+        height:98px;
+    }
+}
+@media all and (max-width: 580px){
+    .servBody ul li, .prvBody ul li{
+        width:158px;
+    }
+    .servBody ul li a, .prvBody ul li a{
+        font-size:12px;
+    }
+	.languages{
+		padding-left:10px;
+	}
+	.enter{
+		padding-left:0px;
+	}
+}
+@media all and (max-width:560px){
+	#serv{
+        display: none;
+    }
+}
+@media all and (max-width: 534px){
+    .servBody img{
+        margin-top: 3px;
+    }
+}
+@media all and (max-width:505px){
+    .inf{
+        position: relative;
+    }
+    .inf>div{
+        clear: both;
+        float: left;
+        left:120px;
+    }
+    .icons{
+        margin-left:120px;
+    }
+	.search form{
+        width: 150px;
+    }
+}
+@media all and (max-width: 470px){
+	.showEnterField, .dropDown{
+		top:72px;
+	}
+	.logo img {
+    height: 107px;
+	}
+}
+@media all and (max-width: 419px){
+    .inf>div{
+        left:60px;
+    }
+    .icons{
+        margin-left:60px;
+    }
+}
+@media all and (max-width: 410px){
+   
+     .showEnterField{
+        top:72px;
+    }
+}
+@media all and (max-width: 390px){
+    .servBody img, .prvBody img{
+        margin-left: 67px;
+        margin-top: 20px;
+    }
+}
+@media all and (max-width: 380px){
+    .logo{
+        width:115px;
+    }
+    .logo img{
+        height:90px;
+        width:150px;
+    }
+
+}
+@media all and (max-width: 345px) {
+    #prem{
+        display: none;
+    }
+    .inf>div{
+        left:60px;
+    }
+    .icons{
+        margin-left:0px;
+    }
+}

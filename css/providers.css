@@ -1,0 +1,35 @@
+@font-face{
+    font-family:freesans;
+    src:url("../fonts/freesans/freesans.ttf");
+}
+@font-face{
+    font-family:freesansbold;
+    src:url("../fonts/freesans/freesansbold.ttf")
+}
+@font-face{
+    font-family: JosefinSans-SemiBold;
+    src:url("../fonts/Josefin_Sans/JosefinSans-SemiBold.ttf")
+}
+@font-face{
+    font-family: JosefinSans-Light;
+    src:url("../fonts/Josefin_Sans/JosefinSans-Light.ttf")
+}
+.providers{
+    padding-top: 30px;
+}
+.providers h3{
+    text-transform: uppercase;
+    text-align: center;
+    color:#000;
+    font-family:freesansbold;
+    font-size: 16px;
+}
+.providersSlide>div{
+   border:1px solid;
+    width:200px;
+    height: 200px;
+}
+.providersSlide div img{
+    width:200px;
+    height: 200px;
+}
